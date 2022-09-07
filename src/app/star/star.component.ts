@@ -19,7 +19,7 @@ export class StarComponent implements OnChanges {
   @Output() tellParent: EventEmitter<string> = new EventEmitter<string>();
 
   ngOnChanges(): void {
-    this.cropWidth = (this.rating * 75) / 5;
+    this.cropWidth = (this.rating)* 75 / 10;
   }
 
   tellParaentData() {
